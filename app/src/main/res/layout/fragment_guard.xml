@@ -1,0 +1,113 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_24"
+        android:text="@string/security"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_20_sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/redcard"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="@dimen/dimen_24"
+        app:cardBackgroundColor="@color/reddish_pink"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/security" />
+
+
+    <TextView
+        android:id="@+id/textsos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:text="@string/sos"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/redcard"
+        app:layout_constraintTop_toTopOf="@+id/redcard" />
+
+    <TextView
+        android:id="@+id/sos_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:text="@string/in_case_of_emergency_keep_telling_family_members_to_contact_me"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/sos_img"
+        app:layout_constraintStart_toStartOf="@+id/redcard"
+        app:layout_constraintTop_toBottomOf="@+id/textsos" />
+
+    <ImageView
+        android:id="@+id/sos_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:src="@drawable/ic_sos2"
+        app:layout_constraintBottom_toBottomOf="@+id/redcard"
+        app:layout_constraintEnd_toEndOf="@+id/redcard"
+        app:layout_constraintTop_toTopOf="@+id/redcard" />
+
+    <TextView
+        android:id="@+id/textguard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:text="@string/guard"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/greencard"
+        app:layout_constraintTop_toTopOf="@+id/greencard" />
+
+    <TextView
+        android:id="@+id/guard_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:text="@string/guard_se"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toStartOf="@+id/guard_img"
+        app:layout_constraintStart_toStartOf="@+id/greencard"
+        app:layout_constraintTop_toBottomOf="@+id/textguard" />
+
+    <ImageView
+        android:id="@+id/guard_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        android:elevation="16dp"
+        android:src="@drawable/ic_shield"
+        app:layout_constraintBottom_toBottomOf="@+id/greencard"
+        app:layout_constraintEnd_toEndOf="@+id/greencard"
+        app:layout_constraintTop_toTopOf="@+id/greencard" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/greencard"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="@dimen/dimen_24"
+        app:cardBackgroundColor="@color/blue_green"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/redcard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
